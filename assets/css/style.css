@@ -1,0 +1,117 @@
+:root {
+    --bg: #0d0d0d;
+    --card: #1a1a1a;
+    --text: #e0e0e0;
+    --purple: #8a2be2;
+    --blue: #00d4ff;
+}
+
+/* 🔥 CENTRADO GLOBAL */
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* GLOBAL */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-image: url('/relaxcorp/assets/img/fondo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: var(--text);
+}
+
+/* TITULOS */
+h1, h2, h3 {
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* TEXTOS */
+p {
+    background: var(--card);
+    padding: 10px;
+    border-radius: 6px;
+    margin: 8px 0;
+}
+
+/* BOTONES */
+button {
+    background: var(--purple);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: var(--blue);
+}
+
+/* LINKS */
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+/* HR */
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 20px 0;
+}
+
+/* INPUTS */
+input {
+    padding: 10px;
+    margin: 5px 0;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+}
+
+/* TABLAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #222;
+}
+
+th {
+    background: var(--purple);
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+tr:hover {
+    background: #2a2a2a;
+}
+
+/* BOTÓN DELETE */
+.btn-delete {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+}

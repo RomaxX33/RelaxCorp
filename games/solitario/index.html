@@ -1,0 +1,53 @@
+<!--
+====================================================
+ARCHIVO: index.html (Solitario)
+CAPA: FRONTEND / MOTOR DE JUEGO
+FUNCIÓN: Contenedor del juego Solitario (Klondike)
+====================================================
+
+Este archivo actúa como:
+- Punto de entrada del minijuego Solitario
+- Contenedor del motor JavaScript compilado
+- Interfaz de ejecución independiente dentro del iframe
+
+No contiene lógica del juego directamente,
+solo carga el bundle generado por el build del juego.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solitaire</title>
+
+        <style>
+            /*
+            ESTILOS BASE DEL CONTENEDOR DEL JUEGO
+            Se elimina scroll y se adapta a pantalla completa
+            */
+            html,
+            body,
+            .container {
+                margin: 0px;
+                height: 100vh;
+                width: 100vw;
+                overflow: hidden;
+                background: #d7d7d7;
+            }
+        </style>
+
+        <!--
+        CARGA DEL MOTOR DEL JUEGO (BUNDLE COMPILADO)
+        Este archivo contiene toda la lógica del Solitario:
+        - reglas del juego
+        - renderizado
+        - interacción usuario
+        - assets (cartas, sonidos, etc.)
+        -->
+        <script type="module" crossorigin src="./assets/js/index-b56b8230.js"></script>
+    </head>
+
+    <body>
+        <!-- CONTENEDOR PRINCIPAL DEL JUEGO -->
+        <div class="container" id="game-container"></div>
+    </body>
+</html>

@@ -1,20 +1,26 @@
-# Credenciales y configuración local
+# Environment and secrets
 .env
 .env.*
 !.env.example
 
-# Sistema operativo
+# Operating system
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Editores / IDE
+# IDEs and editors
 .vscode/
 .idea/
+*.code-workspace
 
 # Logs
 *.log
+logs/
 
-# Archivos temporales
+# Temporary and backup files
 *.tmp
 *.temp
+*.bak
+*.old
+*.swp
+*.swo
